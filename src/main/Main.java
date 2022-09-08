@@ -20,6 +20,10 @@ public class Main {
         System.out.println(tree.sorted());
         System.out.println(tree.find(6));
         System.out.println(tree.find(2));
+
+        tree.remove(6);
+
+        System.out.println(tree);
     }
 
 }

@@ -9,23 +9,26 @@ public class BinarySearchTree {
     public BinarySearchTree() {
         root = new Leaf();
     }
+    
+    public void add(int a) {
+        root = root.add(a);
+    }
 
-    @Override
-    public String toString() {
-        return this.root + "";
+    public void remove(int a) {
+        root = root.remove(a);
     }
 
     public boolean find(int a) {
         return root.find(a);
     }
 
-    public void add(int a) {
-        root = root.add(a);
-    }
-
     public List<Integer> sorted() {
         return root.sorted();
     }
-
     
+    @Override
+    public String toString() {
+        return this.root + "";
+    }
+  
 }
